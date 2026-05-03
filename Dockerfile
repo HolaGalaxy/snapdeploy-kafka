@@ -1,4 +1,4 @@
-FROM bitnami/kafka:latest
+FROM bitnamilegacy/kafka:latest
 
 # Enable KRaft mode (no Zookeeper needed)
 ENV KAFKA_ENABLE_KRAFT=yes
