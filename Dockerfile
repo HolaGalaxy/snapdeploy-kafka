@@ -1,5 +1,7 @@
 FROM bitnamilegacy/kafka:latest
 
+ENV KAFKA_HEAP_OPTS="-Xmx256m -Xms256m"
+
 # Enable KRaft mode (no Zookeeper needed)
 ENV KAFKA_ENABLE_KRAFT=yes
 ENV KAFKA_CFG_NODE_ID=0
